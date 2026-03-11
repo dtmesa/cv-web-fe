@@ -1,0 +1,26 @@
+.account-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-link {
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.account-link.active {
+  color: red;
+  font-weight: 500;
+}
+
+.account-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: black;
+}
